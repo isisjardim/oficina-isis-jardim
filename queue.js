@@ -3,8 +3,21 @@ class Queue {
   constructor(){
     this.elements = []
   }
-  
-  // Implementar aqui
+  size(){
+    return this.elements.length
+  }
+  add(item){
+    this.elements.push(item)
+  }
+  peek() {
+    return this.elements[0]
+  }
+   remove() {
+    return this.elements.shift()
+  }
+
 }
+  
+
 
 module.exports = Queue
